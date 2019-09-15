@@ -1,5 +1,4 @@
 import pandas as pd
-import magic
 import os
 import glob
 import base64
@@ -20,7 +19,7 @@ path = input('please paste the path to your excel file here: ')
 
 files = []
 for file in os.listdir(path):
-	if magic.from_file(path + '\\'+ file) == "Microsoft Excel 2007+":
+	if  file.split('.')[1] == 'xls' or file.split('.')[1] == 'xlsx':
 		files.append(path + '\\'+ file)
 
 print(files)
