@@ -1,0 +1,5 @@
+pandas
+magic
+base64
+html
+IPython
